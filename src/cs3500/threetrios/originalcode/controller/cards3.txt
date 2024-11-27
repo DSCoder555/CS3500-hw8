@@ -1,0 +1,10 @@
+HeroKnight 7 3 9 A
+SkyWhale 5 4 8 7
+AngryDragon 6 5 9 9
+WindBird 3 7 2 4
+WorldDragon 8 A 7 5
+ThunderBeast 9 4 2 A
+FirePhoenix 7 6 8 3
+WaterSerpent 5 8 A 6
+EarthGolem 9 3 7 8
+ShadowStalker 6 7 4 8

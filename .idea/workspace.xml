@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fde97b49-f26d-418c-b551-c3e8f0a74a8e" name="Changes" comment="Moved player interfaces">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/README-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/README-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/__MACOSX/._IPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/controller/ITTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/controller/ITTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/controller/ModelStatusFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/controller/ModelStatusFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/controller/PlayerActionFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/controller/PlayerActionFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/controller/ReadingThreeTriosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/controller/ReadingThreeTriosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/AtkVal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/AtkVal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/CellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/CellType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/GridCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/GridCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/PlayerColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/PlayerColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/ReadOnlyThreeTriosModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/ReadOnlyThreeTriosModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/model/ThreeTriosModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/model/ThreeTriosModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/player/IMachinePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/player/IMachinePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/player/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/player/IPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/screenshotUI.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/screenshotUI.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/GUIThreeTriosHandPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/GUIThreeTriosHandPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/GUIThreeTriosView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/GUIThreeTriosView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/GUIVisualThreeTriosCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/GUIVisualThreeTriosCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/TextualThreeTriosView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/TextualThreeTriosView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/ThreeTriosGridPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/ThreeTriosGridPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/ThreeTriosHandPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/ThreeTriosHandPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/ThreeTriosPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/ThreeTriosPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/VisualThreeTriosCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/VisualThreeTriosCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.cs3500.threetrios/view/VisualThreeTriosView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/view/VisualThreeTriosView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/threetrios/originalcode/hw5/controller/GPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/originalcode/hw5/controller/GPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs3500/threetrios/originalcode/hw5/controller/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs3500/threetrios/originalcode/hw5/controller/HumanPlayer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2pP5XqUB4HsV2bukDAfReDAzylH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/dariu/Downloads/CS3500/hw8/src/cs3500/threetrios/originalcode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dariu\Downloads\CS3500\hw8\src\cs3500\threetrios\originalcode" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dariu\Downloads\CS3500\hw8\src\cs3500\threetrios\originalcode\hw5\controller" />
+      <recent name="C:\Users\dariu\Downloads\CS3500\hw8\src\cs3500\threetrios" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-f644763e9732-4a89cc43" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fde97b49-f26d-418c-b551-c3e8f0a74a8e" name="Changes" comment="" />
+      <created>1732654915640</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732654915640</updated>
+      <workItem from="1732654916787" duration="6684000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create Repo">
+      <option name="closed" value="true" />
+      <created>1732668282020</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732668282021</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Moved player interfaces">
+      <option name="closed" value="true" />
+      <created>1732669502485</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732669502485</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create Repo" />
+    <MESSAGE value="Moved player interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved player interfaces" />
+  </component>
+</project>

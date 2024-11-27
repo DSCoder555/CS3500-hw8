@@ -1,0 +1,10 @@
+ShadowSpecter 1 1 1 1
+FlameTalon 2 2 2 2
+StormWarden 3 3 3 3
+MysticOwl 4 4 4 4
+FrostGiant 5 5 5 5
+EmberHawk 6 6 6 6
+IronSerpent 7 7 7 7
+BladeTiger 8 8 8 8
+ThunderMoth 9 9 9 9
+VenomWolf A A A A

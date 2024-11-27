@@ -1,0 +1,4 @@
+3 3
+XX C C
+C C X
+X C C
