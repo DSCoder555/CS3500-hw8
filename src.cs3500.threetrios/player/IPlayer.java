@@ -1,4 +1,4 @@
-package cs3500.threetrios.player;
+package player;
 
 import java.util.List;
 

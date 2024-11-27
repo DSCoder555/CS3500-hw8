@@ -3,7 +3,7 @@ package model;
 import java.util.List;
 
 import controller.ModelStatusFeatures;
-import cs3500.threetrios.player.IPlayer;
+import player.IPlayer;
 
 /**
  * Represents a mutable model part of a game of ThreeTrios.

@@ -7,7 +7,7 @@ import java.awt.event.MouseListener;
 
 import controller.PlayerActionFeatures;
 import model.ReadOnlyThreeTriosModel;
-import cs3500.threetrios.player.IPlayer;
+import player.IPlayer;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;

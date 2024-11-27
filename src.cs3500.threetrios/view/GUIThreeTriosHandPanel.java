@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import model.Card;
 import model.Direction;
 import model.PlayerColor;
-import cs3500.threetrios.player.IPlayer;
+import player.IPlayer;
 
 /**
  * Represents a player's hand panel that is drawn on either side of the grid in the visual view.

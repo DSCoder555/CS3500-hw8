@@ -1,6 +1,6 @@
 package controller;
 
-import cs3500.threetrios.player.IPlayer;
+import player.IPlayer;
 
 /**
  * Represents the model status features that the model sends as notifications to the controller to

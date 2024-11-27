@@ -1,7 +1,7 @@
 package view;
 
 import controller.PlayerActionFeatures;
-import cs3500.threetrios.player.IPlayer;
+import player.IPlayer;
 
 /**
  * Represents a visual Three Trios view.

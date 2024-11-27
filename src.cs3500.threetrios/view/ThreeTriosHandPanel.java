@@ -1,6 +1,6 @@
 package view;
 
-import cs3500.threetrios.player.IPlayer;
+import player.IPlayer;
 
 /**
  * Represents a hand panel for a visual Three trios View.

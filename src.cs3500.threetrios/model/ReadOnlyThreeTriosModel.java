@@ -2,7 +2,7 @@ package model;
 
 import java.util.List;
 
-import cs3500.threetrios.player.IPlayer;
+import player.IPlayer;
 
 /**
  * Represents the behaviors of the ThreeTrios game model, including setting up
