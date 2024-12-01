@@ -13,8 +13,12 @@ import cs3500.threetrios.providercode.player.IPlayer;
 
 public class ModelAdapter implements ReadOnlyThreeTriosModel {
   private cs3500.threetrios.originalcode.model.ThreeTriosModel model;
+  private GamePlayer redPlayer;
+  private GamePlayer bluePlayer;
   public ModelAdapter(cs3500.threetrios.originalcode.model.ThreeTriosModel model){
     this.model = model;
+    redPlayer = new GamePlayer(PlayerColor.RED, model);
+    bluePlayer = new GamePlayer(PlayerColor.BLUE, model);
   }
   /**
    * Checks if the game is over. The game ends when all cardholder cells are filled.
@@ -55,7 +59,12 @@ public class ModelAdapter implements ReadOnlyThreeTriosModel {
    */
   @Override
   public IPlayer getTurn() {
-    return null;
+    if (model.currentPlayer()==Player.Red){
+      return redPlayer;
+    }
+    else{
+      return bluePlayer;
+    }
   }
 
   /**
@@ -66,7 +75,7 @@ public class ModelAdapter implements ReadOnlyThreeTriosModel {
    */
   @Override
   public List<IPlayer> getPlayers() {
-    return null;
+    return List.of(redPlayer,bluePlayer);
   }
 
   /**
@@ -79,7 +88,12 @@ public class ModelAdapter implements ReadOnlyThreeTriosModel {
    */
   @Override
   public Card cardAtCoordinate(int row, int col) {
-    return new CardAdapter(model.getCard(row,col));
+    try{
+      return new CardAdapter(model.getCard(row,col));
+    }catch (IllegalArgumentException ignored){
+      return null;
+    }
+
   }
 
   /**
@@ -92,7 +106,12 @@ public class ModelAdapter implements ReadOnlyThreeTriosModel {
    */
   @Override
   public IPlayer ownerAtCoordinate(int row, int col) {
-    return null;
+    if (model.getOwner(row, col)==Player.Red){
+      return redPlayer;
+    }
+    else{
+      return bluePlayer;
+    }
   }
 
   /**
@@ -111,7 +130,8 @@ public class ModelAdapter implements ReadOnlyThreeTriosModel {
    */
   @Override
   public int numCardsFlipped(IPlayer p, Card c, int row, int col) {
-    return 0;
+    throw new IllegalArgumentException("Tried to flip cards");
+//    return model.getPossibleFlips(0, 0, 0);
   }
 
   /**

@@ -7,6 +7,7 @@ import java.util.Random;
 
 import cs3500.threetrios.newcode.ModelAdapter;
 import cs3500.threetrios.newcode.ViewAdapter;
+import cs3500.threetrios.newcode.ViewListenerAdapter;
 import cs3500.threetrios.originalcode.controller.AIPlayerUnflippable;
 import cs3500.threetrios.originalcode.controller.GPlayer;
 import cs3500.threetrios.originalcode.controller.HumanPlayer;
@@ -19,6 +20,7 @@ import cs3500.threetrios.originalcode.model.ThreeTrioModelGame;
 import cs3500.threetrios.originalcode.model.ThreeTriosModel;
 import cs3500.threetrios.originalcode.view.ThreeTriosGUI;
 import cs3500.threetrios.originalcode.view.ThreesTriosGUIView;
+import cs3500.threetrios.providercode.model.PlayerColor;
 import cs3500.threetrios.providercode.model.ReadOnlyThreeTriosModel;
 import cs3500.threetrios.providercode.view.GUIThreeTriosView;
 import cs3500.threetrios.providercode.view.VisualThreeTriosView;
@@ -54,11 +56,11 @@ public final class ControllerMain {
     ThreeTriosGUI viewPlayer1 = new ThreesTriosGUIView(model);
     ReadOnlyThreeTriosModel modelAdapt = new ModelAdapter(model);
     VisualThreeTriosView viewPlayer2 = new GUIThreeTriosView(modelAdapt);
-    ThreeTriosGUI viewAdapt = new ViewAdapter(viewPlayer2);
+    ThreeTriosGUI viewAdapt = new ViewAdapter(viewPlayer2, PlayerColor.BLUE);
     GPlayer player1 = new HumanPlayer(model, Player.Red);
-    GPlayer player2 = new AIPlayerUnflippable(model, Player.Blue);
+    GPlayer player2 = new HumanPlayer(model, Player.Blue);
     ThreesTrioController controller1 = new ThreesTrioController(model, player1, viewPlayer1);
-    ThreesTrioController controller2 = new ThreesTrioController(model, player2, viewAdapt);
+    ThreesTrioController controller2 = new ViewListenerAdapter(model, player2, viewAdapt);
     model.startGame();
   }
 }

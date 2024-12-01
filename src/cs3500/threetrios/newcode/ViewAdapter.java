@@ -1,13 +1,18 @@
 package cs3500.threetrios.newcode;
 
+import java.awt.*;
+
 import cs3500.threetrios.originalcode.view.ThreeTriosGUI;
 import cs3500.threetrios.originalcode.view.ViewFeatures;
+import cs3500.threetrios.providercode.model.PlayerColor;
 import cs3500.threetrios.providercode.view.VisualThreeTriosView;
 
 public class ViewAdapter implements ThreeTriosGUI {
   private VisualThreeTriosView view;
-  public ViewAdapter(VisualThreeTriosView view){
+  private PlayerColor playerColor;
+  public ViewAdapter(VisualThreeTriosView view, PlayerColor color){
     this.view = view;
+    this.playerColor = color;
   }
   /**
    * Adds a feature listener to the view to handle user interactions.
@@ -16,7 +21,10 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void addFeatureListener(ViewFeatures features) {
-
+    if (features instanceof ViewListenerAdapter){
+      ViewListenerAdapter adapter = (ViewListenerAdapter) features;
+      view.addPlayerActionFeatures(adapter);
+    }
   }
 
   /**
@@ -25,7 +33,8 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void startRendering() {
-
+    view.makeVisible();
+    view.updateTitle(new GamePlayer(playerColor, null));
   }
 
   /**
@@ -35,7 +44,7 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void display(boolean show) {
-
+    view.setEnabled(true);
   }
 
   /**
@@ -44,7 +53,8 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void advance() {
-
+    view.refresh();
+    view.updateTitle(new GamePlayer(playerColor, null));
   }
 
   /**
@@ -64,7 +74,8 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void displayMessage(String message) {
-
+    //Does not exist
+    //view.createPopup();
   }
 
   /**
@@ -75,6 +86,6 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void errorMessage(String message) {
-
+    //Does not exist
   }
 }

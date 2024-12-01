@@ -21,7 +21,6 @@ public class CardAdapter implements Card {
       color = PlayerColor.BLUE;
     }
     else {
-      System.out.println("Should be a hole");
       throw new IllegalArgumentException("Bad card");
     }
     //TODO: find a way to get the card names
