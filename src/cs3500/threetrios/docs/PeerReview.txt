@@ -1,0 +1,31 @@
+Design critique
+    In general, using the provider's interfaces was very easy as many of our functions for the
+    components did the same thing, and it was just a matter of calling the corresponding function.
+    The main exception was the IPlayer interface.  In general, that interface is over called and
+    underused for the functions given to it.  The interface appears to take most of the
+    responsibilities of the controller, making it both difficult to replicate when not given the
+    implementation but needing it for the view and sharing information that should be kept in the
+    controller component.  I would recommend making a readonly parent class and calling that outside
+    of the controller component to share the color and hand info without letting the other
+    components change the games in ways they shouldn't.
+Implementation critique
+    Their view implementation generally made sense based on their interfaces.  I never had to look
+    at their panel classes to see how they worked.  I did have to look at their GUIThreeTriosView
+    class to understand their usage of the PlayerActionListener since it was mostly used in
+    MouseClickers which were not shown in the interface.  Also, there are some public methods
+    missing null argument checkers and the constructor is not checking the game state of the model.
+Documentation critique
+    The documentation was generally easy to follow, especially in matching near identical function
+    in our code to each other in adapters when the names weren't close enough to guess or there were
+    multiple functions with similar names.  The providers making a md file made it easy to quickly
+    familiarize myself with their code, especially with how they sectioned it and represented the
+    quickstart code.
+Design/code limitations and suggestions on how to address them
+    1. IPlayer is used too much: Create a Read-Only IPlayer Interface with the getters that will be
+    called in the view instead of the mutable interface.
+    2. GUIThreeTriosView misses some exceptions: add checkers for the model state when constructing,
+    check that valid PlayerActionListeners are passed in and make sure valid inputs are given for
+    the popup message.
+    3. Using Cells instead of Cards for the model grid risks trying to get a card from a hole:
+    Either create a card class for hole cells or throw an exception if the function is called on a
+    hole cell

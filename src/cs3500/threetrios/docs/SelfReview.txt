@@ -1,0 +1,10 @@
+We are generally satisfied with how we approached this assignment as we did not run into any
+issues that could not be resolved with looking at their documentation.  We started by adapting the
+model and view components (along with their necessary subclasses) then  moved to the controller
+component, but it might've been more efficient to start with the subclasses and then go into the
+larger components so that we could determine all of their necessary functionality to work with the
+components they interact with.
+
+Our experience with the providers was short but very helpful, they gave us their initial code on
+time and when we emailed them for missing interfaces or view implementation files, they responded
+quickly.

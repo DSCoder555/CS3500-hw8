@@ -11,6 +11,11 @@ import cs3500.threetrios.providercode.controller.PlayerActionFeatures;
 import cs3500.threetrios.providercode.model.PlayerColor;
 
 public class ViewListenerAdapter extends ThreesTrioController implements PlayerActionFeatures {
+
+  private ThreeTriosModel model;
+  private PlayerColor color;
+  private int selectedCardNum;
+
   /**
    * Sets up the model, view, the two players of the game, the current player, and starts rendering
    * the view.
@@ -20,15 +25,8 @@ public class ViewListenerAdapter extends ThreesTrioController implements PlayerA
    * @param view       The view to set up.
    * @throws IllegalArgumentException throws if model, gamePlayer or view are null
    */
-  private ThreeTriosModel model;
-  private PlayerColor color;
-  private int selectedCardNum;
   public ViewListenerAdapter(ThreeTriosModel model, GPlayer gamePlayer, ThreeTriosGUI view) {
     super(model, gamePlayer, view);
-//    if (view instanceof ViewAdapter){
-//      ViewAdapter adapter = (ViewAdapter) view;
-//      adapter.ac
-//    }
     this.model = model;
     if (gamePlayer.getPlayer()== Player.Red){
       color = PlayerColor.RED;
@@ -92,6 +90,6 @@ public class ViewListenerAdapter extends ThreesTrioController implements PlayerA
    */
   @Override
   public int getCardSelectedIdx() {
-    return 0;
+    return selectedCardNum;
   }
 }

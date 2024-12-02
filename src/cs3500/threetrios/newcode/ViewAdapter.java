@@ -2,6 +2,8 @@ package cs3500.threetrios.newcode;
 
 import java.awt.*;
 
+import javax.swing.*;
+
 import cs3500.threetrios.originalcode.view.ThreeTriosGUI;
 import cs3500.threetrios.originalcode.view.ViewFeatures;
 import cs3500.threetrios.providercode.model.PlayerColor;
@@ -63,7 +65,8 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void error() {
-
+    System.out.println("OOPS!");
+    view.refresh();
   }
 
   /**
@@ -74,8 +77,7 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void displayMessage(String message) {
-    //Does not exist
-    //view.createPopup();
+    view.createPopup(message,"Message", JOptionPane.INFORMATION_MESSAGE);
   }
 
   /**
@@ -86,6 +88,6 @@ public class ViewAdapter implements ThreeTriosGUI {
    */
   @Override
   public void errorMessage(String message) {
-    //Does not exist
+    view.createPopup(message,"Message", JOptionPane.ERROR_MESSAGE);
   }
 }

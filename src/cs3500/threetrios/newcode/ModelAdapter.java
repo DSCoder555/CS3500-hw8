@@ -130,8 +130,7 @@ public class ModelAdapter implements ReadOnlyThreeTriosModel {
    */
   @Override
   public int numCardsFlipped(IPlayer p, Card c, int row, int col) {
-    throw new IllegalArgumentException("Tried to flip cards");
-//    return model.getPossibleFlips(0, 0, 0);
+    return model.getPossibleFlips(p.getHand().indexOf(c),row,col);
   }
 
   /**
